@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background:#1E1E1E;
+         font-size: 20px;
+         text-shadow: 0 0 2px black;
+         height: 100vh;
+         overflow: hidden;
+    }
+    form {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         row-gap: 20px;
+         width: 40%;
+    }
+    input, select {
+         background: none;
+         border: 1px solid #1E1E1E;
+         border-radius: 8px;
+         height: 45px;
+         width: 100%;
+         box-shadow: 4px 2px 4px black;
+    }
+    button {
+         width: 100%;
+         height: 40px;
+         background:#1E1E1E;
+         color: white;
+         border: 1px solid #1E1E1E;
+         border-radius: 10px;
+         cursor: pointer;
+         box-shadow: 4px 2px 4px black;
+    }
+    button:hover {
+         background: none;
+         color: #1E1E1E;
+    }
+    .first{
+         min-width: 200px;
+         width: 50%;
+         height: 650px;
+         background-color: #D9D9D9;
+         border: 1px #1E1E1E solid;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         border-radius: 2px;
+         box-shadow: 4px 2px 4px black;
+    }
+</style>
+<body>
+   <div class="first"> 
+    <form id="formElement">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="last-name" name="lastName">
+        <label for="date">Date Of Birth</label>
+        <input type="date" id="date" name="date" min="1900-01-01" max="2023-12-31">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="number">
+        <select id="options">
+            <option>Female</option>
+            <option  >Male</option>
+            <option >Other</option>
+        </select>
+        <button id="submitBtn" type="submit" value="click">submit</button>
+    </form>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>
